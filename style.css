@@ -1,0 +1,123 @@
+body {
+    margin-bottom: 30px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.footer-nav a:active {
+    color: red;
+}
+
+.main {
+    margin: 0 auto;
+    margin-top: 65px;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.main .google-logo {
+    width: 50%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.search-box {
+    width: 70%;
+    max-width: 450px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.search-box .search-icon {
+    width: 25px;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.search-box input[type="text"] {
+    flex: 1 1 100%;
+    margin: 0;
+    border-style: none;
+    outline: none;
+    height: 35px;
+}
+
+.search-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-buttons button {
+    margin: 0px 10px 0 10px;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.blue-button, button:hover, button:active {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+button:hover.white-button {
+    border-color: #a1a1a1
+}
+
+button:active.white-button {
+    border-color: #4285f4;
+}
+
+.blue-button {
+    color: white;
+    background-color: #4387fd;
+}
+
+button:active.blue-button {
+    background-color: #264986;
+}
+
+@media screen and (max-width: 596px){
+    .footer-nav {
+        justify-content: center;
+    }
+}
